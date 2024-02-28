@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
     return (
-        <nav className="flex justify-between items-center my-4 font-p">
+        <nav className="flex justify-between items-center my-4 font-Poppins">
             <div id="logo">Your Logo</div>
             <div id="middle-pages">
                 <a href="#">Page 1</a>
