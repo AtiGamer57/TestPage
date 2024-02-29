@@ -1,11 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
+import Body from './Body';
 
 function App() {
   return (
     <>
       <Navbar />
+      <Body />
       <div className="App">
 
         <header className="App-header">
