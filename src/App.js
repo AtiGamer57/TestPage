@@ -5,7 +5,7 @@ import Body from './Body';
 
 function App() {
   return (
-    <>
+    <div className=' w-10/12 absolute left-1/2 -translate-x-1/2'>
       <Navbar />
       <Body />
       <div className="App">
@@ -25,7 +25,7 @@ function App() {
           </a>
         </header>
       </div>
-    </>
+    </div>
   );
 }
 
