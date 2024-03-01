@@ -34,7 +34,10 @@ const ApiImages = () => {
                 <div className=' grid grid-cols-3 w-full gap-5 mb-10'>
                     {data.map((item) => (
                         <div className=' overflow-hidden rounded-3xl relative'>
-                            <img className='object-contain w-full rounded-3xl left-1/2  my-auto' src={item.download_url} alt='random image'/>
+                            <a href={item.url} target='blank'><img className='object-contain w-full rounded-3xl left-1/2  my-auto' src={item.download_url} alt='random image' /></a>
+                            <div className=" left-1/2 -translate-x-1/2 absolute bottom-5 w-10/12 my-auto">
+                                <p className=" text-gray-200 font-normal text-sm mb-3">Author of this image: {item.author}</p>
+                            </div>
                         </div>
                     ))}
                 </div>
