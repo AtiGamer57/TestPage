@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
-import Body from './Body';
+import Trending from './Trending';
 
 function App() {
   return (
     <div className=' w-10/12 absolute left-1/2 -translate-x-1/2 font-Poppins'>
       <Navbar />
-      <Body />
+      <Trending />
       <div className="App">
 
         <header className="App-header">

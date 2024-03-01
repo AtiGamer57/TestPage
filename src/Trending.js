@@ -1,6 +1,6 @@
 import React from "react";
 
-function Body() {
+function Trending() {
     return (
         <>
             <h1 className=" font-bold text-3xl my-3">Trending</h1>
@@ -40,4 +40,4 @@ function Body() {
     );
 }
 
-export default Body;
+export default Trending;
