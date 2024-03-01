@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './Navbar';
 import Trending from './Trending';
+import ApiImages from './ApiImages';
 
 function App() {
   return (
     <div className=' w-10/12 absolute left-1/2 -translate-x-1/2 font-Poppins'>
       <Navbar />
+      <ApiImages />
       <Trending />
       <div className="App">
 
