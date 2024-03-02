@@ -1,10 +1,11 @@
 import React from "react";
+import greetingImage from './assets/images/greeting.jpg' 
 
-function Greeting(){
+function Greeting() {
     return (
-        <div>
-        
-        </div>
+    <div className=' overflow-hidden rounded-3xl relative'>
+        <img className='' src={greetingImage} alt='greeting image' />
+    </div>
     );
 }
 
