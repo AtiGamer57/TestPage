@@ -9,14 +9,12 @@ const ApiImages = () => {
         const fetchData = async () => {
             try {
                 const response = await fetch('https://picsum.photos/v2/list?page=2&limit=9');
-                console.log(response.ok);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
                 const result = await response.json();
                 setData(result);
             } catch (error) {
-                console.log(error);
                 setError(error);
             } finally {
                 setLoading(false);
