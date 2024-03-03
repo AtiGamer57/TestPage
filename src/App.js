@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Trending from './Trending';
 import ApiImages from './ApiImages';
 import Greeting from './Greeting';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Greeting />
       <ApiImages />
       <Trending />
+      <Footer />
     </div>
   );
 }
