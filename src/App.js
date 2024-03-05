@@ -8,7 +8,7 @@ import Footer from './Footer';
 
 function App() {
   return (
-    <div className=' w-10/12 absolute left-1/2 -translate-x-1/2 font-Poppins'>
+    <div className='w-[98%] md:w-11/12 absolute left-1/2 -translate-x-1/2 font-Poppins '>
       <Navbar />
       <Greeting />
       <ApiImages />

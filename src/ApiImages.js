@@ -25,16 +25,16 @@ const ApiImages = () => {
     }, []); // Empty dependency array means the effect runs once after the initial render
 
     return (
-        <div className='font-bold text-3xl mt-3 mb-10 relative'>
-            <h1 className='my-8'>Images That you should randomly see</h1>
+        <div className='font-bold text-lg sm:text-xl md:text-3xl mt-3  relative w-full'>
+            <h1 className='my-3 sm:my-5 md:my:8'>Images That you should randomly see</h1>
             {loading && <p>Loading...</p>}
             {data.length > 0 && (
-                <div className=' grid grid-cols-3 w-full gap-5 mb-10'>
+                <div className=' grid grid-cols-3 w-full gap-1 sm:gap-3 md:gap-5 mb-10'>
                     {data.map((item, i) => (
-                        <div key={i} className=' overflow-hidden rounded-3xl relative'>
-                            <a href={item.url} target='blank'><img className='object-contain w-full rounded-3xl left-1/2  my-auto' src={item.download_url} alt='random image' /></a>
-                            <div className=" left-1/2 -translate-x-1/2 absolute bottom-5 w-10/12 my-auto">
-                                <p className=" text-gray-200 font-normal text-sm mb-3">Author of this image: {item.author}</p>
+                        <div key={i} className=' overflow-hidden rounded-lg sm:rounded-xl md:rounded-3xl relative'>
+                            <a href={item.url} target='blank'><img className='object-contain w-full rounded-lg sm:rounded-xl md:rounded-3xl left-1/2  my-auto' src={item.download_url} alt='random image' /></a>
+                            <div className=" left-1/2 -translate-x-1/2 absolute hidden sm:block bottom-0 w-10/12 my-auto">
+                                <div className=" text-gray-200 font-normal text-xs mb-3">Author of this image: {item.author}</div>
                             </div>
                         </div>
                     ))}
